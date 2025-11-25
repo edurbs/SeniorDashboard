@@ -109,9 +109,12 @@ public class FundraisingView extends Main {
                     .setSortable(true)
                     .setComparator(OutstandingInvoicesDTO::getBalance)
                     .setTextAlign(ColumnTextAlign.END);
-            fundraisingGrid.setSizeFull();
+            //fundraisingGrid.setSizeFull();
+            fundraisingGrid.addClassNames(LumoUtility.Padding.SMALL, LumoUtility.Margin.Top.SMALL, LumoUtility.Margin.Bottom.SMALL);
+            //fundraisingGrid.addThemeVariants(GridVariant.LUMO_COMPACT);
+            fundraisingGrid.setHeightFull();
 
-            addClassNames(LumoUtility.Height.AUTO);
+            addClassNames(LumoUtility.Height.AUTO, LumoUtility.Overflow.AUTO);
             setSizeFull();
 
             add(fundraisingGrid);
@@ -121,8 +124,9 @@ public class FundraisingView extends Main {
             Integer supplierId = supplierBalanceDTO.getId();
             List<OutstandingInvoicesDTO> invoices = fundraisingService.getOutstandingInvoicesOfSupplier(supplierId);
             fundraisingGrid.setItems(invoices);
-            int size = 50 + 50 * invoices.size();
+            int size = 50 + 40 * invoices.size() + 10;
             setHeight(size+"px");
+            //setSizeFull();
 
         }
     }
