@@ -14,10 +14,12 @@ import lombok.Setter;
 public class Fundraising {
 
     @Id
+    @EqualsAndHashCode.Include
     @Column(name = "CodEmp", nullable = false, precision = 4)
     private int companyCode;
 
     @Id
+    @EqualsAndHashCode.Include
     @Column(name = "CodFil", nullable = false, precision = 5)
     private int branchCode;
 
@@ -26,7 +28,11 @@ public class Fundraising {
     @Column(name = "NumCcr", nullable = false, precision = 8)
     private int contractNumber;
 
-    @Column(name = "CodFor", precision = 9)
-    private Integer supplyId;
+//    @Column(name = "CodFor", precision = 9)
+//    private Integer supplyId;
+
+    @ManyToOne(fetch = FetchType.LAZY)
+    @JoinColumn(name = "CodFor", referencedColumnName = "CodFor", insertable = false, updatable = false)
+    private Supplier supplier;
 }
 
