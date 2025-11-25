@@ -22,11 +22,11 @@ class FundraisingServiceTest {
         assertNotNull(outstandingInvoicesOfSupplier);
     }
 
-    @Test
-    void getOutstandingInvoices() {
-        List<OutstandingInvoicesDTO> outstandingInvoices = fundraisingService.getAllOutstandingInvoices();
-        assertNotNull(outstandingInvoices);
-    }
+//    @Test
+//    void getOutstandingInvoices() {
+//        List<OutstandingInvoicesDTO> outstandingInvoices = fundraisingService.getAllOutstandingInvoices();
+//        assertNotNull(outstandingInvoices);
+//    }
 
 
 

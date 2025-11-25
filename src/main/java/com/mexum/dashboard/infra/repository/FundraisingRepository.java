@@ -68,6 +68,7 @@ public interface FundraisingRepository extends JpaRepository<Fundraising, Fundra
                 COALESCE(t.actualBalance, 0) > 0
             ORDER BY 
                 balance desc
-            """, nativeQuery = true)
+            """,
+            nativeQuery = true)
     List<OutstandingInvoicesDTO> findAllOutstandingInvoices();
 }
