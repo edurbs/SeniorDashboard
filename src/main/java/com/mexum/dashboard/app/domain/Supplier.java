@@ -4,8 +4,6 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
-import jakarta.validation.constraints.NotNull;
-import jakarta.validation.constraints.Size;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
@@ -22,8 +20,4 @@ public class Supplier {
     @Column(name = "CodFor", nullable = false, precision = 9)
     private int id;
 
-    @Size(max = 50)
-    @NotNull
-    @Column(name = "ApeFor", nullable = false, length = 50)
-    private String tradeName;
 }
