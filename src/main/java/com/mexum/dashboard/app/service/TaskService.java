@@ -1,5 +1,7 @@
-package com.mexum.dashboard.examplefeature;
+package com.mexum.dashboard.app.service;
 
+import com.mexum.dashboard.app.domain.Task;
+import com.mexum.dashboard.infra.repository.TaskRepository;
 import org.jspecify.annotations.Nullable;
 import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;

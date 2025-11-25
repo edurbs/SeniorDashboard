@@ -1,5 +1,7 @@
 package com.mexum.dashboard.examplefeature;
 
+import com.mexum.dashboard.app.domain.Task;
+import com.mexum.dashboard.app.service.TaskService;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

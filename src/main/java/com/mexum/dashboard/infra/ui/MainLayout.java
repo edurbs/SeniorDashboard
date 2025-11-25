@@ -1,4 +1,4 @@
-package com.mexum.dashboard.base.ui;
+package com.mexum.dashboard.infra.ui;
 
 import com.vaadin.flow.component.applayout.AppLayout;
 import com.vaadin.flow.component.html.Div;

@@ -1,4 +1,4 @@
-package com.mexum.dashboard.examplefeature;
+package com.mexum.dashboard.app.domain;
 
 import jakarta.persistence.*;
 import org.jspecify.annotations.Nullable;

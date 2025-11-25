@@ -1,8 +1,8 @@
-package com.mexum.dashboard.examplefeature.ui;
+package com.mexum.dashboard.infra.ui;
 
-import com.mexum.dashboard.base.ui.component.ViewToolbar;
-import com.mexum.dashboard.examplefeature.Task;
-import com.mexum.dashboard.examplefeature.TaskService;
+import com.mexum.dashboard.app.domain.Task;
+import com.mexum.dashboard.app.service.TaskService;
+import com.mexum.dashboard.infra.ui.component.ViewToolbar;
 import com.vaadin.flow.component.button.Button;
 import com.vaadin.flow.component.button.ButtonVariant;
 import com.vaadin.flow.component.datepicker.DatePicker;

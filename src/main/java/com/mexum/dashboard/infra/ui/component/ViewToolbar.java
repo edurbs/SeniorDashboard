@@ -1,4 +1,4 @@
-package com.mexum.dashboard.base.ui.component;
+package com.mexum.dashboard.infra.ui.component;
 
 import com.vaadin.flow.component.Component;
 import com.vaadin.flow.component.Composite;
