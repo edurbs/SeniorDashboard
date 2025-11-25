@@ -109,9 +109,7 @@ public class FundraisingView extends Main {
                     .setSortable(true)
                     .setComparator(OutstandingInvoicesDTO::getBalance)
                     .setTextAlign(ColumnTextAlign.END);
-            //fundraisingGrid.setSizeFull();
             fundraisingGrid.addClassNames(LumoUtility.Padding.SMALL, LumoUtility.Margin.Top.SMALL, LumoUtility.Margin.Bottom.SMALL);
-            //fundraisingGrid.addThemeVariants(GridVariant.LUMO_COMPACT);
             fundraisingGrid.setHeightFull();
 
             addClassNames(LumoUtility.Height.AUTO, LumoUtility.Overflow.AUTO);
@@ -126,8 +124,6 @@ public class FundraisingView extends Main {
             fundraisingGrid.setItems(invoices);
             int size = 50 + 40 * invoices.size() + 10;
             setHeight(size+"px");
-            //setSizeFull();
-
         }
     }
 
