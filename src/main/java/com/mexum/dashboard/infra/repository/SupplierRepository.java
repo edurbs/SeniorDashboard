@@ -23,6 +23,8 @@ public interface SupplierRepository extends JpaRepository<Supplier, Integer>, Jp
                 SAPIENS.E501TCP t ON c.NUMCCR = t.NUMCCR AND t.TITCAR = 'N'
             GROUP BY
                 f.CODFOR, f.APEFOR
+            HAVING
+                COALESCE(SUM(t.VLRABE), 0) > 0
             ORDER BY
                 balance DESC
             """, nativeQuery = true)
