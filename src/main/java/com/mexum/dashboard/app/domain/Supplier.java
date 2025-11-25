@@ -4,6 +4,7 @@ import jakarta.persistence.Column;
 import jakarta.persistence.Entity;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import jakarta.validation.constraints.NotNull;
 import lombok.EqualsAndHashCode;
 import lombok.Getter;
 import lombok.Setter;
@@ -17,7 +18,8 @@ public class Supplier {
 
     @Id
     @EqualsAndHashCode.Include
+    @NotNull
     @Column(name = "CodFor", nullable = false, precision = 9)
-    private int id;
+    private Integer id;
 
 }
